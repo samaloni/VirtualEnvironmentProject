@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ColliderFPS : MonoBehaviour {
@@ -30,6 +31,25 @@ public class ColliderFPS : MonoBehaviour {
             Debug.Log("Destroying the game object. Num keys = " +key);
             Destroy(gameObject);
             keyScoreUI.GetComponent<Text>().text = "Key: " + key;
+
+            if(key == 3)
+            {
+                Debug.Log("Player got 3 keys ");
+                Application.LoadLevel(1);
+                
+            }
+        }
+       else if(collision.collider.name == "FirstPersonCharacter")
+        {
+            key++;
+            Debug.Log("Destroying the game object. Num keys = " + key);
+            Destroy(gameObject);
+            keyScoreUI.GetComponent<Text>().text = "Congratulations You got Key: " + key;
+        }
+       else
+        {
+            Debug.Log("collided with something else : " + collision.collider.name);
+
         }
 
     }

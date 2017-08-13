@@ -91,8 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Medieval_House\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\myScripts\boat.cs" />
+    <Compile Include="Assets\myScripts\BoxOpen.cs" />
     <Compile Include="Assets\myScripts\ColliderFPS.cs" />
     <Compile Include="Assets\myScripts\CountObjects.cs" />
+    <Compile Include="Assets\myScripts\HideUnhideObject.cs" />
+    <Compile Include="Assets\myScripts\PlayerOnBoat.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
